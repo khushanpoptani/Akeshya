@@ -1,0 +1,17 @@
+[
+    {
+      "pnr": "1234567890",
+      "trainName": "Express Train",
+      "currentLocation": "Station A",
+      "estimatedArrival": "14:30",
+      "seatDetails": "S1-45, S1-46"
+    },
+    {
+      "pnr": "0987654321",
+      "trainName": "Intercity",
+      "currentLocation": "Station B",
+      "estimatedArrival": "16:45",
+      "seatDetails": "A1-12, A1-13"
+    }
+  ]
+  
