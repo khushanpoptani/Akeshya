@@ -1,79 +1,80 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# Akeshya - Train PNR Status App
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Purpose of the App
 
-## Step 1: Start the Metro Server
+The Akeshya - Train PNR Status App is a React Native application designed to help users quickly check train details using their Passenger Name Record (PNR) number. This app aims to provide a simple and efficient way to track train status, including train name, current location, estimated arrival time, and seat details. It also supports detecting PNR numbers from incoming SMS messages on Android devices, making it highly convenient for users on the go.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Features
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **PNR Search**: Manually enter a 10-digit PNR to fetch train details.
+- **Fetch PNR from SMS (Android Only)**: Automatically detect PNR numbers from incoming SMS messages.
+- **Real-time Updates**: Continuously poll for updated train details every second.
+- **Train Details Display**:
+  - Train Name
+  - Current Location
+  - Estimated Arrival
+  - Seat Details
+- **Input Validation**: Ensures that only valid 10-digit PNRs are processed.
+- **Error Handling**:
+  - Invalid PNR
+  - Missing Train Details
+  - Permission Denied for SMS Access
 
-```bash
-# using npm
-npm start
+## Steps for Running the Project
 
-# OR using Yarn
-yarn start
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
+
+```
+git clone <repository-url>
+cd <repository-folder>
 ```
 
-## Step 2: Start your Application
+### 2. Install Dependencies
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Install all necessary dependencies by running the following command:
 
-### For Android
+```
+npm install
+```
 
-```bash
-# using npm
+### 3. Install React Native Dependencies
+
+Install libraries required for the app to function correctly, including the dependencies used in Home.tsx:
+
+```
+npm run install-dependencies
+```
+
+### 4. iOS Setup (Optional - MacOS Only)
+
+If you are developing for iOS on MacOS, install CocoaPods dependencies:
+
+```
+npm run install-pods
+```
+
+### 5. Start the Metro Server
+
+Start the Metro server (used to bundle JavaScript for the app):
+
+```
+npm run start
+```
+
+### 6. Run the App
+
+- **For Android**:
+
+```
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### For iOS
+- **For iOS (MacOS only)**:
 
-```bash
-# using npm
+```
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+# Akeshya
